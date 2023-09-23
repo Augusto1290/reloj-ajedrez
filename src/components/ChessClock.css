@@ -1,5 +1,5 @@
 .chess-clock {
-    width: 100vw;   
+    width: 100vw;     
     height: 100vh; 
     display: flex;
     flex-direction: column; 
@@ -28,7 +28,31 @@
     border: none;
     border-radius: 4px;
   }
-  
+
+  .chess-clock button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+  }
+  .config-modal button{
+    padding: 10px 20px;
+    font-size: 14px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+  }
+  input{
+    margin: 5px;
+  }
   .timers {
        width: 100vw; 
   height: 100vh; 
@@ -82,7 +106,7 @@
       }
       
       .game-controls button {
-        padding: 4px 20px;
+        padding: 20px 20px;
         font-size: 12px;
         cursor: pointer;
         background-color: #dc3545;
@@ -134,6 +158,11 @@
      align-items: center; 
      font-size: 18px;
    }
+
+   .config-modal{
+    display: flex;
+    flex-direction: column;
+   }
   }
 
   .modal {
@@ -154,4 +183,19 @@
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 1230px){
+    .config-modal{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+     }
+     .config-modal button{
+      width: 100px;
+      font-size: 12px;
+      margin: auto;
+      margin-top: 10px;
+     }
+
   }
